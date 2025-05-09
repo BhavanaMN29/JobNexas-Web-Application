@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Section */
+.student-header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: white;
+  padding: 30px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #007bff;
+}
+
+.login-card p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group-buttons button {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-group-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.form-group-buttons button:active {
+  background-color: #004085;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+p {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.logo {
+  position: absolute;
+  left: 0; /* Aligns the logo to the left edge of the screen */
+  top: 5%; /* Vertically centers the logo */
+  transform: translateY(-50%); /* Centers logo exactly in the middle of the header */
+  height: 70px; /* Adjust the size of your logo */
+}

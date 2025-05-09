@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobNexas</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header> 
+    <h1>JobNexas</h1>
+    <nav class="login-buttons">
+      <button onclick="location.href='{{ url_for('student_login') }}'">Student Login</button>
+      <button onclick="location.href='{{ url_for('recruiter_login') }}'">Recruiter Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="HireMe Logo" class="hero-logo" />
+      <div class="intro">
+        <h1>Unlock Your Future with JobNexas</h1>
+        <p>Connecting <strong>passionate students</strong> with <em>top recruiters</em> to create <strong>career-defining opportunities</strong> and <em>transform potential into success</em>.</p>
+      </div>
+      
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <h2>About JobNexas</h2>
+      <p><strong>JobNexas</strong> is a smart career platform that highlights skills , and verified achievements over traditional degrees.</p> <p>Connecting emerging talent with forward-thinking recruiters, it offers a transparent, portfolio-driven ecosystem for trusted hiring.</p> <p>Whether you’re a student starting out or a recruiter seeking job-ready candidates, <strong>JobNexas</strong> simplifies the journey with AI-powered matching and real-time engagement.</p>
+    </section>
+
+<!-- Companies Section -->
+<section class="trusted-companies">
+  <h3>Top Companies Trust Us</h3>
+  <div class='companies'>
+    <span>Deloitee</span>
+    <span>Figma</span>
+    <span>HCL</span>
+    <span>ApnaC</span>
+    <span>Microsoft</span>
+    <span>Meeshoo</span>
+    <span>Infosys</span>
+    <span>L&T</span>
+    <span>Tech Mahindra</span>
+    <span>Morgan Stanley</span>
+    <span>TCS</span>
+    <span>IgniteIQ</span>
+</section>
+
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="workflow">
+        <div class="step">
+          <h4>1️⃣ Student Applies</h4>
+          <p>Students explore job opportunities and apply with their portfolio and skills.</p>
+        </div>
+        <div class="step">
+          <h4>2️⃣ Recruiter Verifies</h4>
+          <p>Recruiters review the application, verify skills, and check relevant experience.</p>
+        </div>
+        <div class="step">
+          <h4>3️⃣ Get Contacted</h4>
+          <p>If everything looks good, recruiters reach out directly to students.</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!--testimonal-->
+    <section class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>"JobNexas helped me land my first internship! The process was so smooth and easy to follow."</p>
+          <strong>– Priya, Student</strong>
+        </div>
+        <div class="testimonial">
+          <p>"We found skilled candidates faster than ever before. The portfolio-based screening is a game-changer."</p>
+          <strong>– Raj, Recruiter</strong>
+        </div>
+      </div>
+    </section>
+  
+  
+ <!-- Key Features Section -->
+<section class="features">
+  <h2>🌟 Why Choose JobNexas?</h2>
+  <div class="features-container">
+    <div class="feature-box">
+      <h3>🎯 Skill-Based Matching</h3>
+      <p>Smart algorithm connects students to jobs that match real skills — not just degrees.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📁 Portfolio First</h3>
+      <p>Recruiters see real work, verified achievements, and project experience before anything else.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⚡ Fast Hiring</h3>
+      <p>Real-time engagement enables recruiters to hire faster and smarter.</p>
+    </div>
+  </div>
+</section>
+
+
+    
+  <section class="stats">
+    <div class="stats-parent-container">
+      <div class="start-career">
+        <h2>🚀 Start your career with <span>JobNexas</span> today!</h2>
+        <button onclick="location.href='{{ url_for('student_login') }}'">Login & Explore Jobs</button>
+      </div>
+    </div>
+
+  
+
+
+
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-number" data-target="15">10+</div>
+        <div class="stat-description">Companies Hired</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-number" data-target="50">45+</div>
+        <div class="stat-description">Active Students</div>
+      </div>
+      
+    </div>
+  </section>
+  
+
+
+
+ 
+        
+        <!-- Role Selection Modal -->
+        <div id="roleModal" style="display:none;">
+            <h2>Select Your Role</h2>
+            <button id="jobSeekerBtn">Job Seeker</button>
+            <button id="recruiterBtn">Recruiter</button>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="chatPanel" style="display:none;">
+            <div id="chatContent">
+                <!-- Dynamic questions and answers will appear here based on the role -->
+            </div>
+            <div class="chat-options">
+                <!-- The buttons will be generated dynamically -->
+            </div>
+        </div>
+    
+
+  </main>
+  
+
+
+<button onclick="scrollToTop()" id="scrollToTopBtn">⬆️</button>
+
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>
